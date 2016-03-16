@@ -1,8 +1,14 @@
-*.iml
+/Icon*
 .gradle
+*.iml
 /local.properties
+/buildSrc/local.properties
+/buildSrc/build
 /.idea/workspace.xml
 /.idea/libraries
 .DS_Store
 /build
-/captures
+lib-dependency.gradle
+/.idea/modules.xml
+captures/
+

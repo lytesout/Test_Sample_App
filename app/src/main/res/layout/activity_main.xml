@@ -10,8 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.theultimatedomain.testsampleapp.MainActivity"
 	android:gravity="center_horizontal"
-    android:background="#40afc5"
-    android:weightSum="1">
+    android:background="#40afc5">
 	
 
     <Button
@@ -24,7 +23,7 @@
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="The Very Best Activity"
         android:id="@+id/btnScottsLayout"

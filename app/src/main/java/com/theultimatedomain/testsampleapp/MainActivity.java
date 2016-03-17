@@ -1,36 +1,24 @@
 package com.theultimatedomain.testsampleapp;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.RelativeLayout;
-
 
 public class MainActivity extends AppCompatActivity {
+
+    private Button btnScottsLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         setupUI();
         setupClickListeners();
-
-        Button mMarshall = (Button) findViewById(R.id.marshall_button);
-        mMarshall.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent marshallIntent = new Intent(MainActivity.this, MarshallActivity.class);
-                startActivity(marshallIntent);
-            }
-        });
-
     }
-
-    private Button btnScottsLayout;
-
 
     private void setupUI()
     {

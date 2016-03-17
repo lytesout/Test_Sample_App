@@ -11,6 +11,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     private Button btnScottsLayout;
+    private Button btnSimon;
     private Button btnMarshall;
 
     @Override
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     {
         btnScottsLayout = (Button) findViewById(R.id.btnLytesout);
         btnMarshall = (Button) findViewById(R.id.marshall_button);
+        btnSimon = (Button) findViewById(R.id.simon_activity_btn);
     }
 
     private void setupClickListeners()
@@ -34,6 +36,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intentScott = new Intent(MainActivity.this, Scott.class);
                 MainActivity.this.startActivity(intentScott);
+            }
+        });
+
+        btnSimon.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(MainActivity.this, SimonActivity.class);
+                startActivity(intent);
             }
         });
 

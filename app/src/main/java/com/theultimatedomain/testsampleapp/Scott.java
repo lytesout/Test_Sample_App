@@ -20,22 +20,22 @@ public class Scott extends AppCompatActivity
         setContentView(R.layout.scott_activity);
         setupUI();
         setupClickListeners();
-        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        //this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
     }
 
-    private Button btnScottsLayout;
+    private Button btnLytesout;
     private RelativeLayout background;
 
     private void setupUI()
     {
-        btnScottsLayout = (Button) findViewById(R.id.btnScottsLayout);
+        btnLytesout = (Button) findViewById(R.id.btnLytesout);
         background = (RelativeLayout) findViewById(R.id.background);
     }
 
     private void setupClickListeners()
     {
-        btnScottsLayout.setOnClickListener(new View.OnClickListener()
+        btnLytesout.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
@@ -48,6 +48,7 @@ public class Scott extends AppCompatActivity
     private void lytesoff()
     {
          background.setBackgroundColor(Color.BLACK);
+
     }
 
 

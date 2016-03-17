@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupUI()
     {
-        btnScottsLayout = (Button) findViewById(R.id.btnScottsLayout);
+        btnScottsLayout = (Button) findViewById(R.id.scott_activity_btn);
         btnMarshall = (Button) findViewById(R.id.marshall_button);
         btnSimon = (Button) findViewById(R.id.simon_activity_btn);
     }
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intentScott = new Intent(MainActivity.this, Scott.class);
-                MainActivity.this.startActivity(intentScott);
+                startActivity(intentScott);
             }
         });
 

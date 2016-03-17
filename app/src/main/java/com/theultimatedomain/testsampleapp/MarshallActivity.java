@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import java.util.Random;
 
@@ -15,7 +16,7 @@ import java.util.Random;
 public class MarshallActivity extends AppCompatActivity {
 
     private Button mChange_color;
-    private LinearLayout mBackground;
+    private RelativeLayout mBackground;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +29,7 @@ public class MarshallActivity extends AppCompatActivity {
 
     private void setUpUI() {
         mChange_color = (Button) findViewById(R.id.change_color);
-        mBackground = (LinearLayout) findViewById(R.id.background);
+        mBackground = (RelativeLayout) findViewById(R.id.background);
 
         mChange_color.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -54,4 +54,10 @@
         android:text="Marshall"
         android:id="@+id/marshall_button"
         android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Alpha Button"
+        android:id="@+id/bailee_button"/>
 </LinearLayout>

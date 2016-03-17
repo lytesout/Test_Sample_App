@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
         setupClickListeners();
     }
 
+
+
     private void setupUI()
     {
         btnScottsLayout = (Button) findViewById(R.id.btnScottsLayout);

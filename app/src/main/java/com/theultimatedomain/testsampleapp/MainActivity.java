@@ -12,7 +12,8 @@ public class MainActivity extends AppCompatActivity {
 
     private Button btnScottsLayout;
     private Button btnSimon;
-    private Button marshall_button;
+    private Button btnMarshall;
+    private Button btnScottSucks;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,16 +21,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         setupUI();
         setupClickListeners();
-
-
-
     }
 
     private void setupUI()
     {
         btnScottsLayout = (Button) findViewById(R.id.btnLytesout);
+        btnMarshall = (Button) findViewById(R.id.marshall_button);
         btnSimon = (Button) findViewById(R.id.simon_activity_btn);
-        Button mMarshall = (Button) findViewById(R.id.marshall_button);
+        btnScottSucks = (Button) findViewById(R.id.btnScottSucks);
     }
 
     private void setupClickListeners()
@@ -52,11 +51,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        marshall_button.setOnClickListener(new View.OnClickListener() {
+        btnMarshall.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent marshallIntent = new Intent(MainActivity.this, MarshallActivity.class);
                 startActivity(marshallIntent);
+            }
+        });
+
+        btnScottSucks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent joeIntent = new Intent(MainActivity.this, Joe.class);
+                startActivity(joeIntent);
             }
         });
     }

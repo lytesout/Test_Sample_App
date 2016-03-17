@@ -24,18 +24,18 @@ public class Scott extends AppCompatActivity
 
     }
 
-    private Button btnLytesout;
+    private Button btnScottsLayout;
     private RelativeLayout background;
 
     private void setupUI()
     {
-        btnLytesout = (Button) findViewById(R.id.btnLytesout);
+        btnScottsLayout = (Button) findViewById(R.id.btnScottsLayout);
         background = (RelativeLayout) findViewById(R.id.background);
     }
 
     private void setupClickListeners()
     {
-        btnLytesout.setOnClickListener(new View.OnClickListener()
+        btnScottsLayout.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)

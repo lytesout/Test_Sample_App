@@ -25,7 +25,13 @@
         android:layout_height="wrap_content"
         android:text="The Best Layout"
         android:id="@+id/btnScottsLayout" />
-
+   
+    <Button
+        android:id="@+id/simon_activity_btn"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text="The Best Activity"/>
+   
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

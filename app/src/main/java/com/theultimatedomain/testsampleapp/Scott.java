@@ -26,6 +26,7 @@ public class Scott extends AppCompatActivity
 
     private Button btnLytesout;
     private RelativeLayout background;
+    private boolean boolLytes = true;
 
     private void setupUI()
     {
@@ -47,7 +48,16 @@ public class Scott extends AppCompatActivity
 
     private void lytesoff()
     {
-         background.setBackgroundColor(Color.BLACK);
+        if(boolLytes)
+        {
+            background.setBackgroundColor(Color.BLACK);
+            btnLytesout.setText("lyteson");
+            boolLytes = false;
+        }else{
+            background.setBackgroundColor(Color.GREEN);
+            btnLytesout.setText("lytesout");
+            boolLytes = true;
+        }
 
     }
 

@@ -16,7 +16,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="YOUSUCKJOE"
+        android:text="The Worst Layout"
         android:id="@+id/button"
         android:background="#ff00ff"
         android:layout_centerVertical="true"
@@ -25,9 +25,10 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="scott sucks"
+        android:text="The Best Layout"
         android:id="@+id/btnScottsLayout"
         android:layout_alignBaseline="@+id/button"
         android:layout_alignBottom="@+id/button"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        />
 </LinearLayout>

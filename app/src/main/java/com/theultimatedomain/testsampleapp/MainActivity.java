@@ -18,6 +18,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         setupUI();
         setupClickListeners();
+
+        Button mMarshall = (Button) findViewById(R.id.marshall_button);
+        mMarshall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent marshallIntent = new Intent(MainActivity.this, MarshallActivity.class);
+                startActivity(marshallIntent);
+            }
+        });
     }
 
     private void setupUI()

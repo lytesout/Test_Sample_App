@@ -18,6 +18,12 @@
 
         <activity android:name=".MarshallActivity"/>
 
+        <activity android:name=".Scott">
+
+        </activity>
+
+
+
         <activity android:name = ".SimonActivity" />
     </application>
 

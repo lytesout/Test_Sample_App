@@ -16,6 +16,12 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".Scott">
+
+        </activity>
+
+
+
         <activity android:name = ".SimonActivity" />
     </application>
 

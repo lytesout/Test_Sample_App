@@ -30,4 +30,12 @@
         android:layout_alignBaseline="@+id/button"
         android:layout_alignBottom="@+id/button"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Problems"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal" />
 </LinearLayout>

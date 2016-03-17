@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btnScottsLayout;
     private Button btnSimon;
     private Button btnMarshall;
+    private Button btnScottSucks;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         btnScottsLayout = (Button) findViewById(R.id.btnLytesout);
         btnMarshall = (Button) findViewById(R.id.marshall_button);
         btnSimon = (Button) findViewById(R.id.simon_activity_btn);
+        btnScottSucks = (Button) findViewById(R.id.btnScottSucks);
     }
 
     private void setupClickListeners()
@@ -54,6 +56,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent marshallIntent = new Intent(MainActivity.this, MarshallActivity.class);
                 startActivity(marshallIntent);
+            }
+        });
+
+        btnScottSucks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent joeIntent = new Intent(MainActivity.this, Joe.class);
+                startActivity(joeIntent);
             }
         });
     }

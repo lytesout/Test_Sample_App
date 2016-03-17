@@ -1,9 +1,12 @@
 package com.theultimatedomain.testsampleapp;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 
 
 /**
@@ -15,14 +18,19 @@ public class Scott extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.scott_activity);
+        setupUI();
+        setupClickListeners();
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
     }
 
     private Button btnLytesout;
+    private RelativeLayout background;
 
     private void setupUI()
     {
         btnLytesout = (Button) findViewById(R.id.btnLytesout);
+        background = (RelativeLayout) findViewById(R.id.background);
     }
 
     private void setupClickListeners()
@@ -39,7 +47,7 @@ public class Scott extends AppCompatActivity
 
     private void lytesoff()
     {
-
+         background.setBackgroundColor(Color.BLACK);
     }
 
 

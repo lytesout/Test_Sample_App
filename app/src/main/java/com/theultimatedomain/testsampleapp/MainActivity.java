@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupUI()
     {
-        btnScottsLayout = (Button) findViewById(R.id.btnLytesout);
+        btnScottsLayout = (Button) findViewById(R.id.btnScottsLayout);
         btnMarshall = (Button) findViewById(R.id.marshall_button);
         btnSimon = (Button) findViewById(R.id.simon_activity_btn);
     }

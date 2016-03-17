@@ -25,6 +25,8 @@
 
 
         <activity android:name = ".SimonActivity" />
+
+        <activity android:name=".BaileeActivity" />
     </application>
 
 </manifest>

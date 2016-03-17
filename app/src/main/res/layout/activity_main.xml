@@ -12,6 +12,24 @@
 	android:gravity="center_horizontal"
     android:background="#40afc5">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MONEY"
+        android:id="@+id/button"
+        android:background="#ff00ff"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+        android:text="Hello World!"
+        android:id="@+id/textView" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

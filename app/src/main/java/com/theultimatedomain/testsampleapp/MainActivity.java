@@ -11,6 +11,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     private Button btnScottsLayout;
+    private Button btnMarshall;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,20 +19,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         setupUI();
         setupClickListeners();
-
-        Button mMarshall = (Button) findViewById(R.id.marshall_button);
-        mMarshall.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent marshallIntent = new Intent(MainActivity.this, MarshallActivity.class);
-                startActivity(marshallIntent);
-            }
-        });
     }
 
     private void setupUI()
     {
         btnScottsLayout = (Button) findViewById(R.id.btnLytesout);
+        btnMarshall = (Button) findViewById(R.id.marshall_button);
     }
 
     private void setupClickListeners()
@@ -41,6 +34,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intentScott = new Intent(MainActivity.this, Scott.class);
                 MainActivity.this.startActivity(intentScott);
+            }
+        });
+
+        btnMarshall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent marshallIntent = new Intent(MainActivity.this, MarshallActivity.class);
+                startActivity(marshallIntent);
             }
         });
     }

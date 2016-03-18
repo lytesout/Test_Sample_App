@@ -54,7 +54,7 @@ public class Scott extends AppCompatActivity
             btnLytesout.setText("lyteson");
             boolLytes = false;
         }else{
-            background.setBackgroundColor(Color.GREEN);
+            background.setBackgroundColor(Color.parseColor("#3bcc58"));
             btnLytesout.setText("lytesout");
             boolLytes = true;
         }
